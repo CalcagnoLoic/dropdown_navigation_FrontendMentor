@@ -6,6 +6,7 @@
 body {
     font-family: Epilogue;
     margin: 0 auto;
+    background-color: hsl(0, 0%, 98%);
 
     /*Style de la barre de navigation */
     header {
@@ -15,6 +16,9 @@ body {
             padding: 5%;
             .menuBtn {
                 height: 5%;
+                &:hover {
+                    cursor: pointer;
+                }
             }
             .menu-responsive {
                 position: fixed;
@@ -24,11 +28,14 @@ body {
                 height: 100vh;
                 width: 50%;
                 padding: 5%;
-                display: none; //changer en responsive 
+                display: none;
                 z-index: 1;
                 .BtnResponsive {
                     float: right;
-                    top: 0;            
+                    top: 0;    
+                    &:hover {
+                        cursor: pointer;
+                    }        
                 }
                 .content1 {
                     margin-top: 50px;
@@ -42,7 +49,7 @@ body {
                                 margin: 15px 0;
                             }
                         }
-                        .featureDisplay, .companyDisplay, li {
+                        .featureDisplay li, .companyDisplay, li {
                             a {
                                 text-decoration: none;
                                 margin: 15px 0;
@@ -57,8 +64,8 @@ body {
                         li {
                             margin: 15px 0;
                         }
-                        .featureMenu li, .companyMenu li {
-                            display: none; //changer en responsive 
+                        .featureMenu, .companyMenu {
+                            display: none;
                             padding-left: 40px;
                             margin: 15px 0;
                             color: hsl(0, 0%, 41%);
@@ -164,6 +171,88 @@ body {
             a {
                 color: hsl(0, 0%, 8%);
                 text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        header {
+            .navbar {
+                padding: 2%;
+                .menuBtn {
+                    display: none;
+                }
+                .menu-responsive {
+                    background-color: transparent;
+                    display: block;
+                    top: 0;
+                    float: none;
+                    position: absolute;
+                    .BtnResponsive {
+                        display: none;       
+                    }
+                    .content1 { //ajuster position des dropdown + changement de couleur du fond + ajouter de l'espacement 
+                        ul {
+                            display: flex;
+                            gap: 20%;
+                            position: absolute;
+                            left: -40%;
+                            top: 1%;
+                        }
+                    }
+                    .content2 {
+                        display: block;
+                        position: absolute;
+                        right: 15%;
+                        top: 5.5%;
+                        a {
+                            padding: 10px; // améliorer le paddig
+                        }
+                    }
+                }
+            }
+        }
+
+        /*Style de la page principale*/
+        main {
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .section1 {
+                    width: 40%;
+                    margin-right: 6%;
+                    text-align: left;
+                    h1 {
+                        font-size: 6rem;
+                        text-align: left;
+                        margin-bottom: 0;
+                    }
+                    p {
+                        text-align: left;
+                        width: 75%;
+                        margin-bottom: 10%;
+                    }
+                    .logo {
+                        margin-top: 6rem;
+                        display: flex;
+                        justify-content: left;
+                    }
+                }
+                .section2 {
+                    .desktop {
+                        display: block;
+                        width: 450px;
+                        margin-bottom: 25px;
+                    }
+                    }
+                    .mobile {
+                        display: none;
+                        
+                }
             }
         }
     }
