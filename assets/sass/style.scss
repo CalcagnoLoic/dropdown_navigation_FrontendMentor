@@ -1,0 +1,170 @@
+@font-face {
+    font-family: Epilogue;
+    src: url(../fonts/Epilogue/Epilogue-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: Epilogue;
+    margin: 0 auto;
+
+    /*Style de la barre de navigation */
+    header {
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 5%;
+            .menuBtn {
+                height: 5%;
+            }
+            .menu-responsive {
+                position: fixed;
+                top: 0;
+                right: 0;
+                background-color: hsl(0, 0%, 98%);
+                height: 100vh;
+                width: 50%;
+                padding: 5%;
+                display: none; //changer en responsive 
+                z-index: 1;
+                .BtnResponsive {
+                    float: right;
+                    top: 0;            
+                }
+                .content1 {
+                    margin-top: 50px;
+                    ul {
+                        padding-left: 0px;
+                        li {
+                            list-style-type: none;
+                            a {
+                                color: hsl(0, 0%, 41%);
+                                font-size: 14px;
+                                margin: 15px 0;
+                            }
+                        }
+                        .featureDisplay, .companyDisplay, li {
+                            a {
+                                text-decoration: none;
+                                margin: 15px 0;
+                            }
+                            .arrow-up, .arrow-down {
+                                margin-left: 7px;
+                            }
+                            .arrow-up {
+                                display: none;
+                            }
+                        }
+                        li {
+                            margin: 15px 0;
+                        }
+                        .featureMenu li, .companyMenu li {
+                            display: none; //changer en responsive 
+                            padding-left: 40px;
+                            margin: 15px 0;
+                            color: hsl(0, 0%, 41%);
+                            font-size: 14px;
+                            .icon {
+                                margin-right: 7px;
+                            }
+                        }
+                    }
+                }
+                .content2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    a {
+                        text-decoration: none;
+                        color: hsl(0, 0%, 41%);
+                        font-size: 14px;
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: 2%;
+                        padding: 4%;
+                        border-radius: 8px;
+                        &:hover {
+                            cursor: pointer;
+                            border: 1px solid hsl(0, 0%, 41%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /*Style de la page principale*/
+    main {
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+            .section1 {
+                text-align: center;
+                h1 {
+                    font-size: 2.2rem;
+                }
+                p {
+                    text-align: center;
+                    color: hsl(0, 0%, 41%);
+                    line-height: 1.5;
+                    font-weight: 500;
+                    margin-bottom: 2rem;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+                a {
+                    text-align: center;
+                    padding: 3%;
+                    text-decoration: none;
+                    border: 1px solid hsl(0, 0%, 41%);
+                    border-radius: 15px;
+                    color: hsl(0, 0%, 41%);
+                    
+                    &:hover {
+                        cursor: pointer;
+                        background-color: hsl(0, 0%, 8%);
+                        color: white;
+                        border: none;
+                        transition: all 1.5s ease;
+                    }
+                }
+                .logo {
+                    margin-top: 3rem;
+                    display: flex;
+                    justify-content: center;
+                    gap: 8%;
+                    align-items: center;
+                    .logoft {
+                        width: 17%;
+                    }
+                    .audiophile {
+                        width: 12%;
+                    }
+                }    
+            }
+            .section2 {
+                .desktop {
+                    display: none;
+                }
+                .mobile {
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+
+    /*Style lié au footer*/
+    footer {
+        margin-top: 35px;
+        p {
+            text-align: center;
+            font-size: 13px;
+            a {
+                color: hsl(0, 0%, 8%);
+                text-decoration: none;
+            }
+        }
+    }
+}
