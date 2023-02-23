@@ -58,8 +58,14 @@ body header .navbar .menu-responsive .content1 ul .featureDisplay li a, body hea
   text-decoration: none;
   margin: 15px 0;
 }
+body header .navbar .menu-responsive .content1 ul .featureDisplay li a:hover, body header .navbar .menu-responsive .content1 ul .companyDisplay a:hover, body header .navbar .menu-responsive .content1 ul li a:hover {
+  cursor: pointer;
+}
 body header .navbar .menu-responsive .content1 ul .featureDisplay li .arrow-up, body header .navbar .menu-responsive .content1 ul .featureDisplay li .arrow-down, body header .navbar .menu-responsive .content1 ul .companyDisplay .arrow-up, body header .navbar .menu-responsive .content1 ul .companyDisplay .arrow-down, body header .navbar .menu-responsive .content1 ul li .arrow-up, body header .navbar .menu-responsive .content1 ul li .arrow-down {
   margin-left: 7px;
+}
+body header .navbar .menu-responsive .content1 ul .featureDisplay li .arrow-up:hover, body header .navbar .menu-responsive .content1 ul .featureDisplay li .arrow-down:hover, body header .navbar .menu-responsive .content1 ul .companyDisplay .arrow-up:hover, body header .navbar .menu-responsive .content1 ul .companyDisplay .arrow-down:hover, body header .navbar .menu-responsive .content1 ul li .arrow-up:hover, body header .navbar .menu-responsive .content1 ul li .arrow-down:hover {
+  cursor: pointer;
 }
 body header .navbar .menu-responsive .content1 ul .featureDisplay li .arrow-up, body header .navbar .menu-responsive .content1 ul .companyDisplay .arrow-up, body header .navbar .menu-responsive .content1 ul li .arrow-up {
   display: none;
@@ -93,10 +99,14 @@ body header .navbar .menu-responsive .content2 a {
   margin-bottom: 2%;
   padding: 4%;
   border-radius: 8px;
+  border: 1px solid hsl(0deg, 0%, 41%);
 }
 body header .navbar .menu-responsive .content2 a:hover {
   cursor: pointer;
-  border: 1px solid hsl(0deg, 0%, 41%);
+  background-color: hsl(0deg, 0%, 8%);
+  color: white;
+  border: none;
+  transition: all 1.5s ease;
 }
 body main .container {
   display: flex;
@@ -170,6 +180,7 @@ body footer p a {
   }
   body header .navbar {
     padding: 2%;
+    margin-bottom: 2.5%;
   }
   body header .navbar .menuBtn {
     display: none;
@@ -186,19 +197,68 @@ body footer p a {
   }
   body header .navbar .menu-responsive .content1 ul {
     display: flex;
-    gap: 20%;
+    gap: 30%;
     position: absolute;
     left: -40%;
-    top: 1%;
+    top: -16px;
+  }
+  body header .navbar .menu-responsive .content1 ul .featureMenu {
+    top: 35px;
+    left: -50px;
+    border-radius: 25px;
+    padding-right: 40px;
+    background-color: white;
+    box-shadow: 15px 6px 25px 1px hsl(0deg, 0%, 41%);
+  }
+  body header .navbar .menu-responsive .content1 ul .companyMenu {
+    top: 35px;
+    left: 100px;
+    width: 75px;
+    padding-right: 40px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 15px 6px 25px 1px hsl(0deg, 0%, 41%);
+  }
+  body header .navbar .menu-responsive .content1 ul .featureDisplay {
+    display: flex;
+  }
+  body header .navbar .menu-responsive .content1 ul .featureDisplay img {
+    width: 15px;
+    height: 8px;
+    position: absolute;
+    top: 35px;
+    left: 60px;
+  }
+  body header .navbar .menu-responsive .content1 ul .companyDisplay {
+    display: flex;
+  }
+  body header .navbar .menu-responsive .content1 ul .companyDisplay img {
+    width: 15px;
+    height: 8px;
+    position: absolute;
+    top: 35px;
+    left: 166px;
+  }
+  body header .navbar .menu-responsive .content1 ul .carreer-res {
+    position: absolute;
+    top: 14px;
+    left: 220px;
+  }
+  body header .navbar .menu-responsive .content1 ul .about-res {
+    position: absolute;
+    top: 14px;
+    left: 320px;
   }
   body header .navbar .menu-responsive .content2 {
     display: block;
     position: absolute;
     right: 15%;
-    top: 5.5%;
+    top: 3.5%;
   }
   body header .navbar .menu-responsive .content2 a {
-    padding: 10px;
+    padding: 20px;
+    width: 45px;
+    border: none;
   }
   body main .container {
     display: flex;

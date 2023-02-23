@@ -53,9 +53,15 @@ body {
                             a {
                                 text-decoration: none;
                                 margin: 15px 0;
+                                &:hover {
+                                    cursor: pointer;
+                                }
                             }
                             .arrow-up, .arrow-down {
                                 margin-left: 7px;
+                                &:hover {
+                                    cursor: pointer;
+                                }
                             }
                             .arrow-up {
                                 display: none;
@@ -91,9 +97,13 @@ body {
                         margin-bottom: 2%;
                         padding: 4%;
                         border-radius: 8px;
+                        border: 1px solid hsl(0, 0%, 41%);
                         &:hover {
                             cursor: pointer;
-                            border: 1px solid hsl(0, 0%, 41%);
+                            background-color: hsl(0, 0%, 8%);
+                            color: white;
+                            border: none;
+                            transition: all 1.5s ease;
                         }
                     }
                 }
@@ -181,6 +191,7 @@ body {
         header {
             .navbar {
                 padding: 2%;
+                margin-bottom: 2.5%;
                 .menuBtn {
                     display: none;
                 }
@@ -193,22 +204,72 @@ body {
                     .BtnResponsive {
                         display: none;       
                     }
-                    .content1 { //ajuster position des dropdown + changement de couleur du fond + ajouter de l'espacement 
+                    .content1 {
                         ul {
                             display: flex;
-                            gap: 20%;
+                            gap: 30%;
                             position: absolute;
                             left: -40%;
-                            top: 1%;
+                            top: -16px;
+                            .featureMenu {
+                                top: 35px;
+                                left: -50px;
+                                border-radius: 25px;
+                                padding-right: 40px;
+                                background-color: white;
+                                box-shadow: 15px 6px 25px 1px hsl(0, 0%, 41%);
+                            }
+                            .companyMenu {
+                                
+                                top: 35px;
+                                left: 100px;
+                                width: 75px;
+                                padding-right: 40px;
+                                border-radius: 25px;
+                                background-color: white;
+                                box-shadow: 15px 6px 25px 1px hsl(0, 0%, 41%);
+                            }
+                            .featureDisplay {
+                                display: flex;
+                                img {
+                                    width: 15px;
+                                    height: 8px;
+                                    position: absolute;
+                                    top: 35px;
+                                    left: 60px;
+                                }
+                            }
+                            .companyDisplay {
+                                display: flex;
+                                img {
+                                    width: 15px;
+                                    height: 8px;
+                                    position: absolute;
+                                    top: 35px;
+                                    left: 166px;
+                                }
+                            }
+                            .carreer-res {
+                                position: absolute;
+                                top: 14px;
+                                left: 220px;
+                            }
+                            .about-res {
+                                position: absolute;
+                                top: 14px;
+                                left: 320px;
+                            }
                         }
                     }
                     .content2 {
                         display: block;
                         position: absolute;
                         right: 15%;
-                        top: 5.5%;
+                        top: 3.5%;
                         a {
-                            padding: 10px; // améliorer le paddig
+                            padding: 20px;
+                            width: 45px;
+                            border: none;
                         }
                     }
                 }
