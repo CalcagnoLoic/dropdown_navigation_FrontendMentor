@@ -267,9 +267,11 @@ body {
                         right: 15%;
                         top: 3.5%;
                         a {
-                            padding: 20px;
-                            width: 45px;
-                            border: none;
+                            padding: 14px 26px;
+                            border: 1px solid hsl(0, 0%, 41%);
+                            &:first-child {
+                                border: none;
+                            }
                         }
                     }
                 }
@@ -288,7 +290,7 @@ body {
                     margin-right: 6%;
                     text-align: left;
                     h1 {
-                        font-size: 6rem;
+                        font-size: 5rem;
                         text-align: left;
                         margin-bottom: 0;
                     }
@@ -302,6 +304,17 @@ body {
                         display: flex;
                         justify-content: left;
                     }
+                    a {
+                        background-color: hsl(0, 0%, 8%);
+                        color: white;
+                        border: none;
+                        padding: 14px 26px;
+                        &:hover {
+                            border: 1px solid hsl(0, 0%, 41%);
+                            color: black;
+                            background-color: transparent;
+                        }
+                    }
                 }
                 .section2 {
                     .desktop {
@@ -309,10 +322,9 @@ body {
                         width: 450px;
                         margin-bottom: 25px;
                     }
-                    }
                     .mobile {
                         display: none;
-                        
+                    }
                 }
             }
         }

@@ -256,8 +256,10 @@ body footer p a {
     top: 3.5%;
   }
   body header .navbar .menu-responsive .content2 a {
-    padding: 20px;
-    width: 45px;
+    padding: 14px 26px;
+    border: 1px solid hsl(0deg, 0%, 41%);
+  }
+  body header .navbar .menu-responsive .content2 a:first-child {
     border: none;
   }
   body main .container {
@@ -272,7 +274,7 @@ body footer p a {
     text-align: left;
   }
   body main .container .section1 h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     text-align: left;
     margin-bottom: 0;
   }
@@ -286,12 +288,23 @@ body footer p a {
     display: flex;
     justify-content: left;
   }
+  body main .container .section1 a {
+    background-color: hsl(0deg, 0%, 8%);
+    color: white;
+    border: none;
+    padding: 14px 26px;
+  }
+  body main .container .section1 a:hover {
+    border: 1px solid hsl(0deg, 0%, 41%);
+    color: black;
+    background-color: transparent;
+  }
   body main .container .section2 .desktop {
     display: block;
     width: 450px;
     margin-bottom: 25px;
   }
-  body main .container .mobile {
+  body main .container .section2 .mobile {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
