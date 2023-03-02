@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="css"/>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="js">
   <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="vs code"/>
-  <img src="https://img.shields.io/badge/Frontend_Mentor-5C2D91?style=for-the-badge&logoColor=white" alt="frontend mentor"/>
+  <img src="https://img.shields.io/badge/Frontend_Mentor-5C2D91?style=for-the-badge&logoColor=white&logo=Frontend-Mentor&logoColor=white" alt="frontend mentor"/>
 </p>
 
 Creation of introduction section of website with a dropdown navigation following the instructions on the [frontend mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). 
